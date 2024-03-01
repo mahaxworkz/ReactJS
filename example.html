@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+
+    </script>
+</head>
+<body>
+     
+            <div ng-app="browserstackApp"> 
+                <h3>Name: <input type="text" 
+                    ng-model="name"></h3>
+                      <br>
+                    <p>{{name}}</p>
+                <hello-worldhi></hello-worldhi> 
+                 
+        
+                </div>
+              
+
+
+        
+     
+        
+    <script>
+        angular.module("browserstackApp", [])
+.component("helloWorldhi",{
+template: 'have a nice day ',
+});
+    </script>
+</body>
+</html>
